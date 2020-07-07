@@ -5,4 +5,5 @@ import { execute } from './run'
 execute([
   'tall-stack',
   'pest',
+  'tall-stack-pest-adapter'
 ])
