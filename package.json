@@ -1,0 +1,39 @@
+{
+    "name": "@owenvoke/create-saas",
+    "version": "0.1.0",
+    "description": "Quickly set up a SAAS in new Laravel projects",
+    "main": "build/index.js",
+    "bin": "build/index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "babel src --out-dir build",
+        "prepare": "npm run build"
+    },
+    "files": [
+        "build"
+    ],
+    "dependencies": {
+        "chalk": "^4.1.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.7.5",
+        "@babel/core": "^7.7.5",
+        "@babel/plugin-proposal-class-properties": "^7.7.4",
+        "@babel/preset-env": "^7.7.5"
+    },
+    "babel": {
+        "plugins": [
+            "@babel/plugin-proposal-class-properties"
+        ],
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "targets": {
+                        "esmodules": true
+                    }
+                }
+            ]
+        ]
+    }
+}
