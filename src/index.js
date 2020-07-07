@@ -3,5 +3,6 @@
 import { execute } from './run'
 
 execute([
-  'tall-stack'
+  'tall-stack',
+  'pest',
 ])
