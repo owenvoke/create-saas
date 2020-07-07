@@ -8,4 +8,5 @@ execute([
   'tall-stack-pest-adapter',
   'laravel-code-style',
   'blade-fontawesome',
+  'laravel-ide-helper',
 ])
