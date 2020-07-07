@@ -1,12 +1,5 @@
 #!/usr/bin/env node
 
-import { execute } from './run'
+import list from './list'
 
-execute([
-  'tall-stack',
-  'pest',
-  'tall-stack-pest-adapter',
-  'laravel-code-style',
-  'blade-fontawesome',
-  'laravel-ide-helper',
-])
+list.run().catch(error => console.error(error.message))
