@@ -2,4 +2,6 @@
 
 import { execute } from './run'
 
-execute([])
+execute([
+  'tall-stack'
+])
