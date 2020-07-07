@@ -7,4 +7,5 @@ execute([
   'pest',
   'tall-stack-pest-adapter',
   'laravel-code-style',
+  'blade-fontawesome',
 ])
