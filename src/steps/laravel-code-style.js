@@ -12,7 +12,7 @@ export default {
       },
       {
         title: 'Artisan: vendor:publish --provider="MattAllan\\LaravelCodeStyle\\ServiceProvider"',
-        task: async () => await execa.command('composer vendor:publish --provider="MattAllan\\LaravelCodeStyle\\ServiceProvider" -n'),
+        task: async () => await execa.command('php artisan vendor:publish --provider="MattAllan\\LaravelCodeStyle\\ServiceProvider" -n'),
       },
       {
         title: 'Gitignore: add .php_cs.cache file',
