@@ -7,6 +7,7 @@ const steps = [
   'laravel-code-style',
   'blade-fontawesome',
   'laravel-ide-helper',
+  'cashier-paddle',
 ]
 
 
