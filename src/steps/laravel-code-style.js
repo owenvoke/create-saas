@@ -8,23 +8,23 @@ export default {
     return new Listr([
       {
         title: 'Composer: require --dev matt-allan/laravel-code-style',
-        task: async () => await execa.command('composer require --dev matt-allan/laravel-code-style -n'),
+        task: async () => await execa.command('composer require --dev matt-allan/laravel-code-style -n')
       },
       {
         title: 'Artisan: vendor:publish --provider="MattAllan\\LaravelCodeStyle\\ServiceProvider"',
-        task: async () => await execa.command('php artisan vendor:publish --provider="MattAllan\\LaravelCodeStyle\\ServiceProvider" -n'),
+        task: async () => await execa.command('php artisan vendor:publish --provider="MattAllan\\LaravelCodeStyle\\ServiceProvider" -n')
       },
       {
         title: 'Gitignore: add .php_cs.cache file',
-        task: async () => await execa.command('echo ".php_cs.cache" >> .gitignore'),
+        task: async () => await execa.command('echo ".php_cs.cache" >> .gitignore')
       },
       {
         title: 'Git: add .',
-        task: async () => await execa.command('git add .'),
+        task: async () => await execa.command('git add .')
       },
       {
         title: 'Git: commit "Add Laravel code style"',
-        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Add Laravel Code Style']),
+        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Add Laravel Code Style'])
       }
     ])
   }

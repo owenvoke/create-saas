@@ -8,15 +8,15 @@ export default {
     return new Listr([
       {
         title: 'Composer: require --dev barryvdh/laravel-ide-helper',
-        task: async () => await execa.command('composer require --dev barryvdh/laravel-ide-helper -n'),
+        task: async () => await execa.command('composer require --dev barryvdh/laravel-ide-helper -n')
       },
       {
         title: 'Git: add .',
-        task: async () => await execa.command('git add .'),
+        task: async () => await execa.command('git add .')
       },
       {
         title: 'Git: commit "Add Laravel IDE helper"',
-        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Add Laravel IDE helper']),
+        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Add Laravel IDE helper'])
       }
     ])
   }

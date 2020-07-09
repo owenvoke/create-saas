@@ -1,4 +1,4 @@
-import Listr from "listr"
+import Listr from 'listr'
 
 const steps = [
   'tall-stack',
@@ -8,11 +8,10 @@ const steps = [
   'laravel-code-style',
   'blade-fontawesome',
   'laravel-ide-helper',
-  'cashier-paddle',
+  'cashier-paddle'
 ]
 
-
-let tasks = []
+const tasks = []
 
 for (const stepName of steps) {
   tasks.push(require(`./steps/${stepName}`).default)
