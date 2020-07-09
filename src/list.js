@@ -3,6 +3,7 @@ import Listr from "listr"
 const steps = [
   'tall-stack',
   'pest',
+  'pest-plugins',
   'tall-stack-pest-adapter',
   'laravel-code-style',
   'blade-fontawesome',
