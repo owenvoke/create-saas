@@ -28,7 +28,7 @@ export default {
       },
       {
         title: 'Git: commit "Add Pest test framework"',
-        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Add Pest test framework'])
+        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'feat(composer): add Pest test framework'])
       }
     ])
   }

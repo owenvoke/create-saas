@@ -24,7 +24,7 @@ export default {
       },
       {
         title: 'Git: commit "Add TALL stack preset"',
-        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Add TALL stack preset'])
+        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'feat(composer): add TALL stack preset'])
       }
     ])
   }

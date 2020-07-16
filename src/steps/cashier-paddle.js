@@ -16,7 +16,7 @@ export default {
       },
       {
         title: 'Git: commit "Add Cashier Paddle"',
-        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Add Cashier Paddle'])
+        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'feat(composer): add Cashier Paddle'])
       }
     ])
   }

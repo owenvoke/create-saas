@@ -16,7 +16,7 @@ export default {
       },
       {
         title: 'Git: commit "Add Blade Font Awesome icons"',
-        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Add Blade Font Awesome icons'])
+        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'feat(composer): add Blade Font Awesome icons'])
       }
     ])
   }

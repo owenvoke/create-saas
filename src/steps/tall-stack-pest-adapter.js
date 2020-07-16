@@ -19,7 +19,7 @@ export default {
       },
       {
         title: 'Git: commit "Update all tests to use Pest syntax"',
-        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Update all tests to use Pest syntax'])
+        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'feat(composer): update tests to use Pest syntax'])
       }
     ])
   }

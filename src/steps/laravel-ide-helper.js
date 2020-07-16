@@ -16,7 +16,7 @@ export default {
       },
       {
         title: 'Git: commit "Add Laravel IDE helper"',
-        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'Add Laravel IDE helper'])
+        task: async () => await execa('git', ['commit', '-a', '--no-gpg-sign', '-m', 'feat(composer): add Laravel IDE helper'])
       }
     ])
   }
