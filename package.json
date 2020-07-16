@@ -1,6 +1,6 @@
 {
     "name": "@owenvoke/create-saas",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "Quickly set up a SAAS in new Laravel projects",
     "main": "build/index.js",
     "bin": "build/index.js",
